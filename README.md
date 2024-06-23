@@ -51,7 +51,7 @@ I experimented with various models to predict the house numbers depicted in the 
 - Optimization: Adam optimizer with a learning rate of 0.001.
 - Loss Function: Categorical Crossentropy.
 
-```
+```python
 def nn_model_1():
     model = Sequential()
     model.add(Input(shape=(1024,)))
