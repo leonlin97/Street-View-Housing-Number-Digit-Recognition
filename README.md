@@ -64,6 +64,9 @@ def nn_model_1():
                   metrics=['accuracy'])
     return model
 ```
+![image](https://github.com/leonlin97/Street-View-Housing-Number-Digit-Recognition/assets/142073522/9a6c8e80-fc7a-409b-80d7-4cf6e0344a12) ![image](https://github.com/leonlin97/Street-View-Housing-Number-Digit-Recognition/assets/142073522/41d61a35-e5d1-4635-a523-ac75db5f21b7)
+
+
 
 #### 2nd ANN Model:
 - This model expands on the first by adding more layers and incorporating dropout and batch normalization for better performance.
