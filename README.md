@@ -64,7 +64,7 @@ def nn_model_1():
                   metrics=['accuracy'])
     return model
 ```
-![image](https://github.com/leonlin97/Street-View-Housing-Number-Digit-Recognition/assets/142073522/9a6c8e80-fc7a-409b-80d7-4cf6e0344a12) ![image](https://github.com/leonlin97/Street-View-Housing-Number-Digit-Recognition/assets/142073522/41d61a35-e5d1-4635-a523-ac75db5f21b7)
+|![image](https://github.com/leonlin97/Street-View-Housing-Number-Digit-Recognition/assets/142073522/9a6c8e80-fc7a-409b-80d7-4cf6e0344a12)| ![image](https://github.com/leonlin97/Street-View-Housing-Number-Digit-Recognition/assets/142073522/41d61a35-e5d1-4635-a523-ac75db5f21b7)|
 
 
 
@@ -75,7 +75,7 @@ def nn_model_1():
 - Optimization: Adam optimizer with a learning rate of 0.0005.
 - Loss Function: Categorical Crossentropy.
 
-```
+```python
 def nn_model_2():
     model = Sequential()
     model.add(Input(shape=(1024,)))
@@ -101,7 +101,7 @@ def nn_model_2():
 - Optimization: Adam optimizer with a learning rate of 0.001.
 - Loss Function: Categorical Crossentropy.
 
-```
+```python
 def cnn_model_1():
     model = Sequential()
     model.add(Input(shape=(32,32,1)))
@@ -129,7 +129,7 @@ def cnn_model_1():
 - Optimization: Adam optimizer with a learning rate of 0.001.
 - Loss Function: Categorical Crossentropy.
 
-```
+```python
 def cnn_model_2():
     model = Sequential()
     model.add(Input(shape=(32,32,1)))
