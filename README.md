@@ -96,6 +96,15 @@ def nn_model_2():
 |![image](https://github.com/leonlin97/Street-View-Housing-Number-Digit-Recognition/assets/142073522/dde4471d-5ca7-4e4a-84f6-6023f6a01e5d) | ![image](https://github.com/leonlin97/Street-View-Housing-Number-Digit-Recognition/assets/142073522/9c7bff16-1708-4529-ac51-5e50accc55fc) |
 | --- | --- |
 
+#### Prediction Accuracy of the 2nd ANN Model
+![image](https://github.com/leonlin97/Street-View-Housing-Number-Digit-Recognition/assets/142073522/c0b4945c-619f-4081-be3c-d8125c741ad9)
+- The overall accuracy of model 2 on pridicting the testing data is 73.7%.
+- The model achieves a high precision and F1-score for most digits, especially for digits 1, 2, 4, and 7.
+- Digits like 5 and 8 have lower precision and recall, indicating room for improvement.
+- The confusion matrix shows that the model performs well on most digits, with high accuracy for digits like 0, 1, 2, and 4.
+- Misclassifications are more frequent for digits 5 and 8, as seen from the off-diagonal values.
+
+
 ### 2. Convolutional Neural Networks (CNNs)
 #### 1st CNN Model:
 - This model introduces convolutional layers to handle image data more effectively.
@@ -123,6 +132,8 @@ def cnn_model_1():
                   metrics=['accuracy'])
     return model
 ```
+|![image](https://github.com/leonlin97/Street-View-Housing-Number-Digit-Recognition/assets/142073522/44328279-e5f1-424d-a743-f26150ffec5b) | ![image](https://github.com/leonlin97/Street-View-Housing-Number-Digit-Recognition/assets/142073522/39c0d271-f411-4406-9fa9-72679271001d) |
+| --- | --- |
 
 #### 2nd CNN Model:
 - This model builds upon the first by adding more convolutional layers, batch normalization, and dropout for better performance.
@@ -159,5 +170,15 @@ def cnn_model_2():
                   metrics=['accuracy'])
     return model
 ```
+|![image](https://github.com/leonlin97/Street-View-Housing-Number-Digit-Recognition/assets/142073522/1b72356e-0f0a-422d-8873-8e4c4eb93bf4) | ![image](https://github.com/leonlin97/Street-View-Housing-Number-Digit-Recognition/assets/142073522/3440a9ba-cdf6-47ed-8f01-ea62beed42f4) |
+| --- | --- |
 
+#### Prediction Accuracy of the 2nd CNN Model
+![image](https://github.com/leonlin97/Street-View-Housing-Number-Digit-Recognition/assets/142073522/a1f5d9b9-5ff2-4285-bd19-3ac51116abc2)
+- The chosen CNN model has an accuracy of 91.5%, which is far more better than the chosen ANN model.
+- Within the predicted label, "Label 6" seems to have the poorest correct prediction comparing to others, followed by "Label 8". We can provide model with more specific label data to improve the overall performance.
+- The confusion matrix shows that the model performs exceptionally well on most digits, with high accuracy for digits 0, 1, 2, 3, 4, 5, 7, and 9.
+- Misclassifications are relatively low across all digits, indicating robust performance.
+- The model achieves high precision and F1-scores for all digits, particularly excelling in digits like 2, 4, and 7.
+- The lowest performance is seen in digit 6, though it still maintains a high level of accuracy.
 
