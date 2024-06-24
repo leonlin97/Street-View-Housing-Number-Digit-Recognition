@@ -93,6 +93,8 @@ def nn_model_2():
                   metrics=['accuracy'])
     return model
 ```
+|![image](https://github.com/leonlin97/Street-View-Housing-Number-Digit-Recognition/assets/142073522/dde4471d-5ca7-4e4a-84f6-6023f6a01e5d) | ![image](https://github.com/leonlin97/Street-View-Housing-Number-Digit-Recognition/assets/142073522/9c7bff16-1708-4529-ac51-5e50accc55fc) |
+| --- | --- |
 
 ### 2. Convolutional Neural Networks (CNNs)
 #### 1st CNN Model:
