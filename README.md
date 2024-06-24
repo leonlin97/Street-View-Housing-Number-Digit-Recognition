@@ -182,3 +182,10 @@ def cnn_model_2():
 - The model achieves high precision and F1-scores for all digits, particularly excelling in digits like 2, 4, and 7.
 - The lowest performance is seen in digit 6, though it still maintains a high level of accuracy.
 
+## Selection of the Final Model: 2nd CNN Model
+After thoroughly evaluating the performance of both Artificial Neural Networks (ANNs) and Convolutional Neural Networks (CNNs) on the SVHN dataset, we have chosen CNN Model 2 as the final solution for the following reasons:
+
+- **Superior Accuracy:** CNN Model 2 achieved an overall accuracy of 91.5%, which is significantly higher compared to the ANN models and CNN Model 1. This indicates a stronger ability to generalize from the training data to unseen test data.
+- **Enhanced Performance Metrics:** The precision, recall, and F1-scores for CNN Model 2 are consistently high across all digit classes. This uniform performance across classes is crucial for applications requiring high reliability and accuracy.
+- **Robust Confusion Matrix:** The confusion matrix for CNN Model 2 shows low misclassification rates, indicating that the model correctly identifies digits with high confidence and minimal errors. This robustness is essential for practical deployment where accuracy is critical.
+- **Advanced Architectural Features:** CNN Model 2 includes additional convolutional layers, batch normalization, and dropout layers, which contribute to its superior performance. These architectural enhancements help in capturing complex patterns in the image data and reducing overfitting.
